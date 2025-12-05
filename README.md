@@ -40,6 +40,7 @@ WeatherDashboard/
 │   ├── prisma/
 │   │   ├── schema.prisma          # Prisma data model definitions
 │   │   └── migrations/            # Auto-generated Prisma migrations
+│   └── tests/                     # unit tests
 │   └── src/
 │       ├── models/
 │       │   ├── prismaClient.js    # PrismaClient singleton using MariaDB adapter
