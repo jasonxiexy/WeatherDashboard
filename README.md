@@ -138,3 +138,12 @@ npm install
 npm run dev
 ```
 Once you started the frontend server, you should be able to access it through `http://localhost:5173/`.
+
+## Test Cases
+**First test**: getAllWeatherFromDb test verifies that the backend correctly retrieves weather records from the database by mocking Prisma and ensuring the service returns the expected rows.
+
+**Second test**: updateAllCitiesWeather test checks the backend’s error-handling logic by mocking failed external API calls and confirming that the service aggregates errors and throws the appropriate ExternalApiError.
+```bash
+cd ./backend
+npm test
+```
