@@ -5,7 +5,7 @@ import {
     upsertWeatherByCity
 } from "../models/weatherModel.js";
 
-const CITIES = Object.freeze(["Toronto", "New York", "London", "Vancouver"]);
+const CITIES = Object.freeze(["Toronto", "New York", "London", "Vancouver", "Calgary"]);
 const OPEN_METEO_TIMEOUT_MS = 8000;
 
 // Separate clients because base URLs are different

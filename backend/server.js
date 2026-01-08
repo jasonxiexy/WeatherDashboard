@@ -24,9 +24,10 @@ app.get("/", (req, res) => {
   res.send("Weather API is running");
 });
 
+// bind to 0.0.0.0 so it listens on all network interface
 // Start server
-app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server listening on http://0.0.0.0:${PORT}`);
 });
 
 // Clean shutdown (nice touch for interviews)
